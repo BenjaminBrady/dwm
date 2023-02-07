@@ -1,5 +1,6 @@
 # dwm version
 VERSION = 6.3
+JAMVER = 2.1
 
 # Customize below to fit your system
 
@@ -29,7 +30,7 @@ LIBS = -L/usr/lib -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} -lX11-xcb\
 
 # flags
 CPPFLAGS = -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_BSD_SOURCE\
-	   -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
+	   -DVERSION=\"${VERSION}\" -DJAMVER=\"${JAMVER}\" ${XINERAMAFLAGS}
 #CFLAGS   = -g -std=c99 -pedantic -Wall -O0 ${INCS} ${CPPFLAGS}
 CFLAGS   = -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os ${INCS}\
 	   ${CPPFLAGS}
